@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AlmacenIngresoHitssModelStoreContainer" CdmEntityContainer="AlmacenIngresoHitssEntities1">
+    <EntitySetMapping Name="Cliente">
+      <EntityTypeMapping TypeName="AlmacenIngresoHitssModel.Cliente">
+        <MappingFragment StoreEntitySet="Cliente">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdTipoIdentificacion" ColumnName="IdTipoIdentificacion" />
+          <ScalarProperty Name="NumeroIdentificacion" ColumnName="NumeroIdentificacion" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Producto">
+      <EntityTypeMapping TypeName="AlmacenIngresoHitssModel.Producto">
+        <MappingFragment StoreEntitySet="Producto">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NombreProducto" ColumnName="NombreProducto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoIdentificacion">
+      <EntityTypeMapping TypeName="AlmacenIngresoHitssModel.TipoIdentificacion">
+        <MappingFragment StoreEntitySet="TipoIdentificacion">
+          <ScalarProperty Name="IdTipoIdentificacion" ColumnName="IdTipoIdentificacion" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Venta">
+      <EntityTypeMapping TypeName="AlmacenIngresoHitssModel.Venta">
+        <MappingFragment StoreEntitySet="Venta">
+          <ScalarProperty Name="IdProductoCliente" ColumnName="IdProductoCliente" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="ValorTotal" ColumnName="ValorTotal" />
+          <ScalarProperty Name="FechaCompra" ColumnName="FechaCompra" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ActualizarCliente" FunctionName="AlmacenIngresoHitssModel.Store.ActualizarCliente" />
+    <FunctionImportMapping FunctionImportName="ActualizarProducto" FunctionName="AlmacenIngresoHitssModel.Store.ActualizarProducto" />
+    <FunctionImportMapping FunctionImportName="ActualizarVenta" FunctionName="AlmacenIngresoHitssModel.Store.ActualizarVenta" />
+    <FunctionImportMapping FunctionImportName="ConsultarCliente" FunctionName="AlmacenIngresoHitssModel.Store.ConsultarCliente">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AlmacenIngresoHitssModel.ConsultarCliente_Result">
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+          <ScalarProperty Name="NumeroIdentificacion" ColumnName="NumeroIdentificacion" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ConsultarProducto" FunctionName="AlmacenIngresoHitssModel.Store.ConsultarProducto">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AlmacenIngresoHitssModel.ConsultarProducto_Result">
+          <ScalarProperty Name="NombreProducto" ColumnName="NombreProducto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="ConsultarVentas" FunctionName="AlmacenIngresoHitssModel.Store.ConsultarVentas">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AlmacenIngresoHitssModel.ConsultarVentas_Result">
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Producto" ColumnName="Producto" />
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="CrearCliente" FunctionName="AlmacenIngresoHitssModel.Store.CrearCliente" />
+    <FunctionImportMapping FunctionImportName="CrearProducto" FunctionName="AlmacenIngresoHitssModel.Store.CrearProducto" />
+    <FunctionImportMapping FunctionImportName="InsertarVenta" FunctionName="AlmacenIngresoHitssModel.Store.InsertarVenta" />
+    <FunctionImportMapping FunctionImportName="ObtenerProductos" FunctionName="AlmacenIngresoHitssModel.Store.ObtenerProductos">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AlmacenIngresoHitssModel.ObtenerProductos_Result">
+          <ScalarProperty Name="NombreProducto" ColumnName="NombreProducto" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

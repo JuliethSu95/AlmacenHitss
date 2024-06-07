@@ -1,0 +1,6 @@
+D:\HITSS\AlmacenHITSS\AlmacenHITSS.Modelo\bin\Debug\AlmacenHITSS.Modelo.dll
+D:\HITSS\AlmacenHITSS\AlmacenHITSS.Modelo\bin\Debug\AlmacenHITSS.Modelo.pdb
+D:\HITSS\AlmacenHITSS\AlmacenHITSS.Modelo\obj\Debug\AlmacenHITSS.Modelo.csproj.AssemblyReference.cache
+D:\HITSS\AlmacenHITSS\AlmacenHITSS.Modelo\obj\Debug\AlmacenHITSS.Modelo.csproj.CoreCompileInputs.cache
+D:\HITSS\AlmacenHITSS\AlmacenHITSS.Modelo\obj\Debug\AlmacenHITSS.Modelo.dll
+D:\HITSS\AlmacenHITSS\AlmacenHITSS.Modelo\obj\Debug\AlmacenHITSS.Modelo.pdb

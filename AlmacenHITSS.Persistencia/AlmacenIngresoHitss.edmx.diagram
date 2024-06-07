@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="d9785e2c4b8648019e009917506d1748" Name="Diagram1">
+        <EntityTypeShape EntityType="AlmacenIngresoHitssModel.Cliente" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlmacenIngresoHitssModel.Producto" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlmacenIngresoHitssModel.TipoIdentificacion" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AlmacenIngresoHitssModel.Venta" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="AlmacenIngresoHitssModel.FK_TIPO_DOCUMENTO" ManuallyRouted="false" />
+        <AssociationConnector Association="AlmacenIngresoHitssModel.FK_VENTA_CLIENTE" ManuallyRouted="false" />
+        <AssociationConnector Association="AlmacenIngresoHitssModel.FK_VENTA_PRODUCTO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
